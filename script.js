@@ -1,3 +1,8 @@
+function initialize()
+{
+    score = 0;
+    let cards = [];
+}
 function clickCard(ele)
 {
     if (ele.style.backgroundColor == "black")
@@ -8,9 +13,26 @@ function clickCard(ele)
     {
         ele.style.backgroundColor = "black";
     }
-    
+    document.getElementById("score") = "Score: " + score;
+    if (cards.length == 2)
+    {
+        cards.clear();
+    }
+    cards.push(ele);
+    checkCards();
 }
+function setCardVals()
+{
+    let cards = document.getElementsByClassName("cards");
+    for (let i = 0; i < cards.length; i++)
+    {
+        cards[i].classList.add("1");
+    }
+}
+function checkCards()
+{
 
+}
 
 document.addEventListener('DOMContentLoaded', (event) => {
     //the event occurred
@@ -28,8 +50,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
         
     }
     addEventListener();
-
-
+    setCardVals();
+    initialize();
 });
 
 

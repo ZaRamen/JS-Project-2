@@ -9,9 +9,15 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>Match Game</h1>
     <div id="message">
-        Start Playing
+        If both images match, they will stay revealed.
+        If they don’t, they will both change back into the hidden icon. Once all of the images have been
+        revealed the game ends. <br>
+        The score is based off the numbre of clicks you do. <br>
+        Press the reset button on the bottom to reset the board.
     </div>
+    <h1>Score: 1</h1>
     <div class="wrapper">
         <div class="cards">A</div>
         <div class="cards">B</div>
@@ -25,6 +31,14 @@
         <div class="cards">J</div>
         <div class="cards">K</div>
         <div class="cards">L</div>
+        <div class="cards">M</div>
+        <div class="cards">N</div>
+        <div class="cards">O</div>
+        <div class="cards">P</div>
     </div>
+    <div id="reset">
+        <button onclick="reset();">Reset</button>
+    </div>
+    
 </body>
 </html>
