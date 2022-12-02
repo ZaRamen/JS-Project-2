@@ -27,7 +27,7 @@ div
     width: 80%;
     margin: auto;
     grid-gap: 10px;
-    height: 800px;
+    height: 500px;
     grid-template-columns: repeat(4, 1fr);
 }
 #message
